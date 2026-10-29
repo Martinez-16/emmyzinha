@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b1030">
+  <meta name="robots" content="noindex, nofollow">
+  <title></title>
+  <!-- descricao -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-text="navegacao.pular"></a>
+  <div id="site">
+    <header class="cabecalho container" id="topo">
+      <a href="/" class="marca"><span data-sprite="caveira"></span><span data-text="marca"></span><span class="marca-ponto">✦</span></a>
+      <nav data-label="navegacao.rotulo">
+        <a href="#carta" data-text="navegacao.carta"></a>
+        <a href="#cantinho" data-text="navegacao.cantinho"></a>
+        <a href="#atelie" data-text="navegacao.atelie"></a>
+        <a href="/galeria.html" class="nav-fotos"><span data-text="navegacao.fotos"></span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <section class="hero container" aria-labelledby="titulo">
+        <div class="hero-texto">
+          <p class="eyebrow"><span class="mini-coracao" data-sprite="coracao"></span><span data-text="inicio.etiqueta"></span></p>
+          <h1 id="titulo"><span data-text="inicio.titulo"></span><br><span data-text="inicio.tituloMeio"></span><em data-text="inicio.tituloDestaque"></em></h1>
+          <p class="hero-descricao" data-text="inicio.descricao"></p>
+          <div class="hero-acoes"><a class="botao primario" href="/galeria.html"><span aria-hidden="true">♡</span><span data-text="inicio.fotos"></span><span aria-hidden="true">↗</span></a><a class="link-suave" href="#cantinho"><span data-text="inicio.explorar"></span><span aria-hidden="true">↓</span></a></div>
+          <p class="hero-nota"><span aria-hidden="true">✧</span> <span data-text="inicio.nota"></span></p>
+        </div>
+        <div class="hero-arte" role="img" data-label="inicio.cena">
+          <span class="cena-lua" data-sprite="lua"></span>
+          <span class="estrelinha e1">✧</span><span class="estrelinha e2">+</span><span class="estrelinha e3">✧</span><span class="estrelinha e4">·</span><span class="estrelinha e5">+</span>
+          <svg class="orbita" viewBox="0 0 480 400" aria-hidden="true"><path d="M40 225C-10 120 248 74 393 144S481 319 301 308"/><path d="m350 79 5 13 13 4-13 4-5 13-4-13-13-4 13-4Z"/></svg>
+          <div class="tapete"><div></div></div>
+          <div class="cena-kuromi" data-sprite="kuromi"></div>
+          <div class="cena-gengar" data-sprite="gengar"></div>
+          <div class="cena-coracao" data-sprite="coracao"></div>
+          <div class="cena-novelo" data-sprite="novelo"></div>
+          <p class="cena-selo"><span aria-hidden="true">✧</span><span data-text="inicio.selo"></span></p>
+          <p class="cena-anotacao" data-text="inicio.desenho"></p>
+        </div>
+      </section>
+      <div class="divisor container"><span></span><p><span aria-hidden="true">✦</span> <span data-text="inicio.divisor"></span> <span aria-hidden="true">✦</span></p><span></span></div>
+      <section class="contador container" aria-labelledby="contador-titulo">
+        <div class="contador-intro"><span class="contador-icone" data-sprite="coracao"></span><div><p class="eyebrow" data-text="contador.etiqueta"></p><h2 id="contador-titulo" data-text="contador.titulo"></h2><p id="contador-mensagem"></p></div></div>
+        <div class="relogio" role="timer"><div><strong id="dias">—</strong><span data-text="contador.dias"></span></div><b aria-hidden="true">:</b><div><strong id="horas">—</strong><span data-text="contador.horas"></span></div><b aria-hidden="true">:</b><div><strong id="minutos">—</strong><span data-text="contador.minutos"></span></div></div>
+      </section>
+      <section id="carta" class="secao carta-secao container" aria-labelledby="carta-titulo">
+        <div class="carta-apresentacao"><p class="eyebrow" data-text="carta.etiqueta"></p><h2 id="carta-titulo" data-text="carta.titulo"></h2><p class="texto-secundario" data-text="carta.descricao"></p><div class="seta-desenho" aria-hidden="true">⤷</div></div>
+        <div class="envelope-area"><button class="envelope" type="button" data-label="carta.abrir"><span class="envelope-papel"></span><span class="envelope-frente"></span><span class="envelope-aba"></span><span class="envelope-destino" data-text="carta.destinatario"></span><span class="envelope-selo" data-sprite="caveira"></span><span class="envelope-remetente" data-text="carta.remetente"></span></button><p class="envelope-dica"><span aria-hidden="true">↑</span> <span data-text="carta.dica"></span></p></div>
+      </section>
+      <section id="cantinho" class="secao container" aria-labelledby="cantinho-titulo">
+        <div class="section-heading"><p class="eyebrow" data-text="cantinho.etiqueta"></p><h2 id="cantinho-titulo" data-text="cantinho.titulo"></h2><p class="texto-secundario" data-text="cantinho.descricao"></p></div>
+        <div class="amigos">
+          <article class="amigo amigo-kuromi"><div class="amigo-texto"><p class="etiqueta-personagem" data-text="cantinho.kuromiPapel"></p><h3 data-text="cantinho.kuromiNome"></h3><p class="balao" id="frase-kuromi" aria-live="polite" data-text="cantinho.kuromiChamada"></p><span class="toque" data-text="cantinho.dica"></span></div><button class="personagem" id="kuromi" type="button" data-label="cantinho.kuromiAcao"><span data-sprite="kuromi"></span><span class="personagem-brilho" aria-hidden="true">✦</span></button></article>
+          <article class="amigo amigo-gengar"><div class="amigo-texto"><p class="etiqueta-personagem" data-text="cantinho.gengarPapel"></p><h3 data-text="cantinho.gengarNome"></h3><p class="balao" id="frase-gengar" aria-live="polite" data-text="cantinho.gengarChamada"></p><span class="toque" data-text="cantinho.dica"></span></div><button class="personagem" id="gengar" type="button" data-label="cantinho.gengarAcao"><span data-sprite="gengar" data-olhos></span><span class="personagem-brilho" aria-hidden="true">✧</span></button></article>
+        </div>
+      </section>
+      <section class="secao container" aria-labelledby="cartinhas-titulo"><div class="section-heading"><p class="eyebrow" data-text="cartinhas.etiqueta"></p><h2 id="cartinhas-titulo" data-text="cartinhas.titulo"></h2><p class="texto-secundario" data-text="cartinhas.descricao"></p></div><div id="cartinhas" class="cartinhas"></div></section>
+      <section class="secao brincar container" aria-labelledby="brincar-titulo"><div class="section-heading"><p class="eyebrow" data-text="brincar.etiqueta"></p><h2 id="brincar-titulo" data-text="brincar.titulo"></h2><p class="texto-secundario" data-text="brincar.descricao"></p></div>
+        <div class="brincadeiras">
+          <article class="painel atelie" id="atelie"><div class="painel-titulo"><span class="icone-painel" data-sprite="novelo"></span><div><h3 data-text="atelie.titulo"></h3><p data-text="atelie.subtitulo"></p></div><span class="etiqueta" data-text="atelie.tamanho"></span></div><div class="canvas-moldura"><canvas id="pixel-canvas" width="512" height="512" tabindex="0" role="application" data-label="atelie.grade" aria-describedby="canvas-instrucao"></canvas></div><div id="paleta" class="paleta" role="group"></div><div class="atelie-ferramentas"><button id="borracha" type="button" class="botao secundario" aria-pressed="false"><span aria-hidden="true">◇</span><span data-text="atelie.borracha"></span></button><button id="limpar" type="button" class="botao discreto" data-text="atelie.limpar"></button><button id="baixar" type="button" class="botao primario"><span aria-hidden="true">↓</span><span data-text="atelie.baixar"></span></button></div><p id="canvas-instrucao" class="instrucao" data-text="atelie.instrucao"></p><p id="canvas-status" class="sr-only" aria-live="polite"></p></article>
+          <article class="painel memoria"><div class="painel-titulo"><span class="icone-painel" data-sprite="estrela"></span><div><h3 data-text="memoria.titulo"></h3><p data-text="memoria.subtitulo"></p></div></div><div class="placar"><span><strong id="jogadas">0</strong> <span data-text="memoria.jogadas"></span></span><span><strong id="pares">0 / 8</strong> <span data-text="memoria.pares"></span></span></div><div id="memoria-grade" class="memoria-grade"></div><div class="memoria-rodape"><p id="memoria-status" aria-live="polite" data-text="memoria.comeco"></p><button id="reiniciar" class="botao secundario" type="button"><span aria-hidden="true">↻</span><span data-text="memoria.reiniciar"></span></button></div></article>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape container"><span class="rodape-coracao" data-sprite="coracao"></span><p data-text="rodape.frase"></p><div><span><span data-text="rodape.feito"></span> <strong data-text="assinatura"></strong> <span aria-hidden="true">♡</span></span><button id="rever-entrada" type="button" class="link-suave" data-text="interface.replay"></button><a href="#topo" class="link-suave" data-text="rodape.topo"></a></div></footer>
+  </div>
+  <dialog id="entrada" class="entrada" data-label="entrada.rotulo"><button id="pular-entrada" class="entrada-pular" type="button" data-text="entrada.pular"></button><div class="entrada-miolo"><p class="eyebrow" data-text="entrada.detalhe"></p><div class="entrada-cena"><div class="entrada-sombra" data-sprite="gengar"></div><div class="entrada-olhos" aria-hidden="true"><i></i><i></i></div><div class="entrada-kuromi" data-sprite="kuromi"></div></div><p id="entrada-subtitulo" data-text="entrada.subtitulo"></p><button type="button" class="botao primario" id="entrar"><span data-text="entrada.chamada"></span><span aria-hidden="true">✦</span></button></div></dialog>
+  <dialog id="carta-dialogo" class="carta-dialogo" aria-labelledby="carta-aberta-titulo"><button type="button" class="fechar-dialogo" data-fechar-carta data-label="carta.fecharRotulo">×</button><div class="papel-carta"><span class="carta-caveira" data-sprite="caveira"></span><p class="eyebrow" data-text="carta.remetente"></p><h2 id="carta-aberta-titulo" data-text="carta.tituloAberto"></h2><div id="carta-paragrafos"></div><p class="carta-despedida" data-text="carta.despedida"></p><p class="assinatura" data-text="assinatura"></p><button type="button" class="botao guardar" data-fechar-carta><span aria-hidden="true">♡</span><span data-text="carta.fechar"></span></button></div></dialog>
+  <dialog id="limpar-dialogo" class="confirmacao" aria-labelledby="limpar-titulo"><h2 id="limpar-titulo" data-text="atelie.confirmar"></h2><div><button id="cancelar-limpar" class="botao secundario" type="button" data-text="atelie.cancelar"></button><button id="confirmar-limpar" class="botao primario" type="button" data-text="atelie.apagar"></button></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <!-- sem-javascript -->
+  <script type="module" src="/src/scripts/principal.js"></script>
+</body>
+</html>

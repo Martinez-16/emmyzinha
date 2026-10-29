@@ -1,0 +1,29 @@
+@import '@fontsource/pixelify-sans/latin-400.css';
+@import '@fontsource/pixelify-sans/latin-500.css';
+@import '@fontsource/dm-sans/latin-400.css';
+@import '@fontsource/dm-sans/latin-500.css';
+@import '@fontsource/dm-sans/latin-600.css';
+
+:root {
+  /* [EDITE AQUI] A identidade visual inteira começa nestas variáveis. */
+  --noite: #1b1030;
+  --preto: #0f0a1a;
+  --painel: #24173b;
+  --painel-claro: #2d1e44;
+  --roxo: #6a4fa3;
+  --lilas: #9b7fd1;
+  --rosa: #ff5fa2;
+  --rosa-claro: #ffb3d1;
+  --olhos: #e8344a;
+  --texto: #f8f1ff;
+  --suave: #c2b2d4;
+  --linha: #4b365f;
+  --papel: #f6eddf;
+  --tinta: #392a44;
+  --fonte-pixel: 'Pixelify Sans', monospace;
+  --fonte-texto: 'DM Sans', sans-serif;
+  --largura: 1152px;
+  --raio: 16px;
+  --espaco-secao: clamp(3.75rem, 8vw, 6.75rem);
+  color-scheme: dark;
+}

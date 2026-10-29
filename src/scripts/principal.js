@@ -1,0 +1,24 @@
+import '../estilos/tema.css';
+import '../estilos/base.css';
+import '../estilos/entrada.css';
+import '../estilos/carta.css';
+import '../estilos/interativos.css';
+import { aplicarTextos } from './utils.js';
+import { preencherSprites } from '../pixel/sprites.js';
+import { iniciarEntrada } from './entrada.js';
+import { iniciarCarta } from './carta.js';
+import { iniciarContador } from './interativos/contador.js';
+import { iniciarPersonagens } from './interativos/personagens.js';
+import { iniciarCartinhas } from './interativos/cartinhas.js';
+import { iniciarAtelie } from './interativos/atelie.js';
+import { iniciarMemoria } from './interativos/memoria.js';
+
+aplicarTextos();
+preencherSprites();
+iniciarCarta();
+iniciarContador();
+iniciarPersonagens();
+iniciarCartinhas();
+iniciarAtelie();
+iniciarMemoria();
+iniciarEntrada();

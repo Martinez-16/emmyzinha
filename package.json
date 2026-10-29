@@ -1,0 +1,18 @@
+{
+  "name": "site-emmy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@fontsource/pixelify-sans": "^5.2.0",
+    "@fontsource/dm-sans": "^5.2.0"
+  },
+  "devDependencies": { "vite": "^7.0.0" },
+  "engines": { "node": ">=22.12.0" }
+}
