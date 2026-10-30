@@ -24,22 +24,22 @@ export const textos = {
 
   // TÍTULOS DA ABA DO NAVEGADOR
   meta: {
-    titulo: `Para ${nomeDela} · um universo todinho seu`,
+    titulo: `Para ${nomeDela} · um presentinho com muito amor pra você`,
     galeriaTitulo: `Nossas fotos · Para ${nomeDela}`,
-    descricao: `Um pequeno universo de pixels, desenhos e carinho. De ${assinatura}, para ${nomeDela}.`
+    descricao: `Um pequeno presente com muito amor. De ${assinatura}, para ${nomeDela}.`
   },
 
   // NOME DO SITE NO CABEÇALHO
-  marca: "emmy.verso",
+  marca: "emmy.presentinho",
 
   // MENU E LINKS
   navegacao: {
     rotulo: "Navegação principal",
     carta: "A carta",
     cantinho: "Seu cantinho",
-    atelie: "Ateliê",
+    atelie: "Algumas coisinhas que gosta",
     fotos: "Nossas fotos",
-    voltar: "Voltar ao nosso universo",
+    voltar: "Voltar pro inicio",
     pular: "Pular para o conteúdo"
   },
 
@@ -47,25 +47,25 @@ export const textos = {
   entrada: {
     chamada: "Toque para entrar",
     subtitulo: "Psst… tem um presente te esperando.",
-    detalhe: "um pequeno universo feito para você",
+    detalhe: "um pequeno presente feito para você",
     pular: "Pular introdução",
-    recebida: `Pode entrar, ${nomeDela} ♡`,
+    recebida: `Pode entrar, Meu amor ♡`,
     rotulo: "Introdução do presente"
   },
 
   // PRIMEIRA TELA — título, descrição e botão de fotos
   inicio: {
     etiqueta: `DE ${assinatura.toLocaleUpperCase('pt-BR')}, COM CARINHO`,
-    titulo: "Um universo",
+    titulo: "Um site",
     tituloMeio: "todinho ",
     tituloDestaque: "seu.",
-    descricao: `${nomeDela}, entre um pontinho de crochê e um pixel, guardei um pouquinho do meu carinho por você.`,
-    fotos: "Nossos pequenos instantes",
+    descricao: `${nomeDela}, entre todas as coisas que eu amo em você, vim demonstrar um pouquinho delas.`,
+    fotos: "Nossos incríveis momentos",
     explorar: "Explorar seu cantinho",
     nota: "Pode ficar. Aqui, o tempo é seu.",
-    selo: "feito de pixels & carinho",
-    cena: "Kuromi e Gengar em pixel art sobre um tapete de crochê, sob a lua e pequenas estrelas.",
-    desenho: "você + eu + um pouquinho de magia",
+    selo: "feito com amor e carinho",
+    cena: "Nós, hihi.",
+    desenho: "Você e eu",
     divisor: "seu jeitinho é a minha parte favorita"
   },
 
@@ -93,9 +93,9 @@ export const textos = {
     remetente: `de: ${assinatura}`,
     tituloAberto: `Para a ${nomeDela},`,
     paragrafos: [
-      "Fiz este cantinho pensando em você. Queria que ele tivesse um pouco das coisas que você gosta: a Kuromi, o Gengar, desenhos e a delicadeza de algo feito pontinho por pontinho.",
-      "Que este pequeno universo te faça sorrir. Que você possa voltar aqui para brincar, desenhar ou simplesmente receber um pouquinho de carinho.",
-      `[EDITE AQUI] ${assinatura}, escreva aqui uma lembrança de vocês ou aquilo que você mais quer dizer para a ${nomeDela}.`
+      "Oii meu amor, espero que esteja bem lendo isso. Fiz esse presentinho com muito carinho, pensando em você e em tudo que a gente já viveu. Você merece todo o meu amor e eu espero que esse cantinho te faça sorrir.",
+      "Eu te amo muito com toda a minha alma e espero que este lugar seja divertido o mesmo tanto que você é divertida para mim, obrigado por tudo meu amor, espero que goste daqui <3.",
+      `Meu amor, lembro perfeitamente de quando nos conhecemos, e a coragem que me faltava pra te mandar mensagem kkkkk, queria eu ter te enviado aquela mensagem antes para conversar com você. Eu não sabia o que estava perdendo. Lembro tambem quando comecei a gostar de você, foi um sentimento muito diferente pra mim, você foi a primeira pessoa que eu senti que realmente se importava comigo, e eu não tava errado, tudo que ja fez por mim não tem preço e é algo que eu vou valorizar pro resto da minha vida, quero casar e ter uma família com você, afinal, a vida sem você já não tem mais sentido algum. Você me aproximou de Deus, fez eu me tornar uma pessoa melhor e me mostrou que o amor, vai além de coisas materiais, além de luxúria e coisas que são banais, você me provou que o amor é sincero, carinhoso, cuidadoso e muito cooperativo e compreensivo. Eu te agradeço muito por tudo que ja fez por mim e prometo que um dia vou te recompensar por tudo`
     ],
     despedida: "Com todo o meu carinho,",
     fechar: "Guardar a cartinha",
