@@ -30,7 +30,7 @@ export const textos = {
   },
 
   // NOME DO SITE NO CABEÇALHO
-  marca: "Para ${nomeDela}",
+  marca: `Para ${nomeDela}`,
 
   // MENU E LINKS
   navegacao: {
