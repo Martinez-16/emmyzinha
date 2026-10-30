@@ -76,7 +76,6 @@ export const textos = {
     dias: "dias",
     horas: "horas",
     minutos: "minutos",
-    segundos: "segundos",
     esperando: "A nossa história merece a data certinha. ♡",
     futuro: "Contando os dias para o nosso começo. ♡",
     invalida: "Vamos conferir a data do nosso começo. ♡",
