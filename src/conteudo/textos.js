@@ -30,7 +30,7 @@ export const textos = {
   },
 
   // NOME DO SITE NO CABEÇALHO
-  marca: "emmy.presentinho",
+  marca: "Para ${nomeDela}",
 
   // MENU E LINKS
   navegacao: {
@@ -55,8 +55,8 @@ export const textos = {
 
   // PRIMEIRA TELA — título, descrição e botão de fotos
   inicio: {
-    etiqueta: `DE ${assinatura.toLocaleUpperCase('pt-BR')}, COM CARINHO`,
-    titulo: "Um site",
+    etiqueta: `DE ${assinatura.toLocaleUpperCase('pt-BR')}, COM AMOR`,
+    titulo: "Um lugar",
     tituloMeio: "todinho ",
     tituloDestaque: "seu.",
     descricao: `${nomeDela}, entre todas as coisas que eu amo em você, vim demonstrar um pouquinho delas.`,
@@ -281,7 +281,7 @@ export const textos = {
   // MENSAGEM FINAL E RODAPÉ
   rodape: {
     frase: "Entre tantos universos, que bom ter você no meu.",
-    feito: "Feito com amor e Aura por José",
+    feito: "Feito com amor e Aura por",
     topo: "Voltar ao início"
   },
 
