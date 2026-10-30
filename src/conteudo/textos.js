@@ -206,7 +206,7 @@ export const textos = {
       },
       {
         nome: "Amarelo",
-        valor: "#f2cf84"
+        valor: "#fffc4d"
       },
       {
         nome: "Vermelho",
@@ -227,7 +227,15 @@ export const textos = {
       {
         nome: "Verde Escuro",
         valor: "#003603"
-      }
+      },
+      {
+        nome: "Cor de pele",
+        valor: "#ebc088"
+      },
+      {
+        nome: "Marrom",
+        valor: "#41200b"
+      },
     
 
 
