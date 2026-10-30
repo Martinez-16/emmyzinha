@@ -2,7 +2,7 @@ import { textos } from '../../conteudo/textos.js';
 import { coracao } from '../../pixel/sprites.js';
 import { criar, preencher, avisar } from '../utils.js';
 
-const TAMANHO = 16;
+const TAMANHO = 32;
 const CHAVE = 'emmy-pixel-art-v1';
 
 // Interpola pontos rápidos: o traço não fica com buracos entre eventos do mouse.

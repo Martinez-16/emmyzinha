@@ -2,38 +2,59 @@
 // "." é transparente. Você pode mudar as cores e desenhar nas matrizes.
 const paleta = { '.': null, K: '#160d24', D: '#442d67', P: '#6a4fa3', L: '#9b7fd1', H: '#bea0ed', R: '#e8344a', W: '#fff8f3', S: '#ff5fa2', B: '#ffb3d1', Y: '#f2cf84' };
 const sprite = linhas => ({ paleta, linhas });
-export const gengar = sprite([
-  '................................',
-  '......KK..............KK........',
-  '......KPK............KPK........',
-  '......KPPK....KK....KPPPK........',
-  '......KPLPK..KPPK..KPLPPK........',
-  '.......KPLKKPPLPKKPPLPK.........',
-  '.......KPPLLLLLLLLLPPPK.........',
-  '......KPPLLLLLLLLLLPPPPK........',
-  '.....KPPLLLLLLLLLLPPPPPPK.......',
-  '....KPPLLLLLLLLLPPPPPPPPPK......',
-  '...KPPLLLLLLLLLPPPPPPPPPPPK.....',
-  '..KKPPLKKKLLLLPPPPKKKPPPPPKK....',
-  '..KPPLLWRRKKLPPPKKRRWPPPPPPK....',
-  '..KPPPLLWRRRKPPKRRRWPPPPPPPK....',
-  '.KPPPPPPLRRRKPPKRRRPPPPPPPPPK...',
-  'KPPPPPPPPKKKPPPPKKKPPPPPPPPPPK..',
-  'KPLPPPPPPPPPPPPPPPPPPPPPPPPLPK..',
-  '.KKPPPWWKWWWWWWWWKWWPPPPPPKK....',
-  '..KPPPWWKWWKWWKWWKWWPPPPPPK.....',
-  '..KPPPWWKWWKWWKWWKWWPPPPPPK.....',
-  '..KPPPPWWWWKWWKWWWWPPPPPPPK.....',
-  '..KPPPPPWWWWWWWWWWPPPPPPPDK.....',
-  '...KPPPPPPKKKKKKPPPPPPPPDK......',
-  '...KPPPPPPPPPPPPPPPPPPPDDK......',
-  '....KPPPPPPPPPPPPPPPPPDDK.......',
-  '....KDPPPPPPPPPPPPPPDDDDK.......',
-  '...KDDDDPPPPPPPPPPDDDDDDDK......',
-  '..KDDDDDDDKKKKKKKDDDDDDDDDK.....',
-  '..KKKKKKKK.......KKKKKKKKKK.....',
-  '................................'
-]);
+export const gengar = {
+  paleta: {
+    ...paleta,
+    K: "#352044", // Contorno roxo
+    D: "#644587", // Sombra
+    P: "#9465bd", // Roxo principal
+    L: "#ae83d5", // Lilás
+    H: "#c7a4e8", // Luz
+    E: "#30203e", // Olhos
+    F: "#fff8f3", // Brilho dos olhos
+    I: "#755581", // Reflexo dos olhos
+    S: "#ef83b1", // Rosa
+    B: "#ffc0d8", // Rosa claro
+    W: "#fff8f3", // Dentinhos
+  },
+
+  linhas: [
+    "................................",
+    "................................",
+    "................................",
+    "......KKK..............KKK......",
+    "......KPKK............KKPK......",
+    "......KLPK.....K.....KKPPK......",
+    "......KLLKK...KKK...KKPLDK......",
+    "......KLHPKKKKKPKKKKKPLLDK......",
+    "......KLHLPPPPPLPPPPPPLLDK......",
+    "......KLHHLLLHHHLLLLLLLLDK......",
+    ".....KKLHHHHHLLLHHLLLLLLDKK.....",
+    ".....KLHHHLLLLLLLLLLLLLLLDK.....",
+    "....KKLHHLEELLLLLLLLEELLLDKK....",
+    "....KLHHLFFEELLLLLLFFEELLDDK....",
+    "....KLHHLFFEELLLLLLFFEELLDDK....",
+    "...KKLHLLEEEFLLLLLLEEEFLLDDKK...",
+    "...KKLHLLEIIELLLLLLEIIELLDDKK...",
+    "....KLLLLLEELLLLLLLLEELLLDDK....",
+    "....KLLSBBSLLKLLLLKLLSBBSDDK....",
+    "..KKKPLSSSSLLKWLLWKLLSSSSDDKKK..",
+    "..KPPLLLLLLLLLKKKKLLLLLLLDLPPK..",
+    ".KKPPLLLLLLLLLLLLLLLLLLLLLLPPKK.",
+    "..KPPLLLLLLLKKKLLKKKLLLLLLLPPK..",
+    "..KKKPDLLLDKSSSKKSSSKDLLLDPKKK..",
+    "....KPPDDLDKSBBSSSSSKDLDDDPK....",
+    "....KKPDDDDKSSSSSSSSKDDDDDKK....",
+    ".....KPPDDPHKSSSSSSKHPDDDPK.....",
+    ".....KKPDDDDHKSSSSKHHDDDDKK.....",
+    "......KKPPDDDDKSSKDDDDDDKK......",
+    ".......KPLLLDDDKKDDDLLLPK.......",
+    ".......KPPPPKKKKKKKKPPPPK.......",
+    ".......KKKPPK......KPPKKK.......",
+    ".........KKKK......KKKK.........",
+    "................................"
+  ]
+};
 export const kuromi = sprite([
   '............................',
   '...SS..................SS...',
@@ -79,13 +100,70 @@ export const sprites = { gengar, kuromi, coracao, caveira, estrela, lua, novelo,
 export function spriteSVG(nome, { classe = '', olhos = false } = {}) {
   const desenho = sprites[nome];
   if (!desenho) return '';
-  const largura = Math.max(...desenho.linhas.map(linha => linha.length));
+
+  const largura = Math.max(
+    ...desenho.linhas.map(linha => linha.length)
+  );
+
   let pixels = '';
-  desenho.linhas.forEach((linha, y) => [...linha].forEach((cor, x) => {
-    if (desenho.paleta[cor]) pixels += `<rect x="${x}" y="${y}" width="1" height="1" fill="${desenho.paleta[cor]}"/>`;
-  }));
-  if (olhos && nome === 'gengar') pixels += '<g class="pupilas" fill="#160d24"><rect x="11" y="13" width="1.5" height="2"/><rect x="20" y="13" width="1.5" height="2"/></g>';
-  return `<svg class="pixel-sprite ${classe}" viewBox="0 0 ${largura} ${desenho.linhas.length}" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true" focusable="false">${pixels}</svg>`;
+  let pixelsOlhos = '';
+
+  desenho.linhas.forEach((linha, y) => {
+    let x = 0;
+
+    while (x < linha.length) {
+      const cor = linha[x];
+      let fim = x + 1;
+
+      while (fim < linha.length && linha[fim] === cor) {
+        fim++;
+      }
+
+      const preenchimento = desenho.paleta[cor];
+
+      if (preenchimento) {
+        const trecho = `
+          <rect
+            x="${x}"
+            y="${y}"
+            width="${fim - x}"
+            height="1"
+            fill="${preenchimento}"
+          />
+        `;
+
+        // Separa os olhos e seus brilhinhos para a animação.
+        if (nome === 'gengar' && 'EFI'.includes(cor)) {
+          pixelsOlhos += trecho;
+        } else {
+          pixels += trecho;
+        }
+      }
+
+      x = fim;
+    }
+  });
+
+  if (pixelsOlhos) {
+    pixels += `
+      <g class="${olhos ? 'pupilas' : ''}">
+        ${pixelsOlhos}
+      </g>
+    `;
+  }
+
+  return `
+    <svg
+      class="pixel-sprite ${classe}"
+      viewBox="0 0 ${largura} ${desenho.linhas.length}"
+      xmlns="http://www.w3.org/2000/svg"
+      shape-rendering="crispEdges"
+      aria-hidden="true"
+      focusable="false"
+    >
+      ${pixels}
+    </svg>
+  `;
 }
 
 export function preencherSprites(raiz = document) {

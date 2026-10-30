@@ -76,6 +76,7 @@ export const textos = {
     dias: "dias",
     horas: "horas",
     minutos: "minutos",
+    segundos: "segundos",
     esperando: "A nossa história merece a data certinha. ♡",
     futuro: "Contando os dias para o nosso começo. ♡",
     invalida: "Vamos conferir a data do nosso começo. ♡",
@@ -95,22 +96,22 @@ export const textos = {
     paragrafos: [
       "Oii meu amor, espero que esteja bem lendo isso. Fiz esse presentinho com muito carinho, pensando em você e em tudo que a gente já viveu. Você merece todo o meu amor e eu espero que esse cantinho te faça sorrir.",
       "Eu te amo muito com toda a minha alma e espero que este lugar seja divertido o mesmo tanto que você é divertida para mim, obrigado por tudo meu amor, espero que goste daqui <3.",
-      `Meu amor, lembro perfeitamente de quando nos conhecemos, e a coragem que me faltava pra te mandar mensagem kkkkk, queria eu ter te enviado aquela mensagem antes para conversar com você. Eu não sabia o que estava perdendo. Lembro tambem quando comecei a gostar de você, foi um sentimento muito diferente pra mim, você foi a primeira pessoa que eu senti que realmente se importava comigo, e eu não tava errado, tudo que ja fez por mim não tem preço e é algo que eu vou valorizar pro resto da minha vida, quero casar e ter uma família com você, afinal, a vida sem você já não tem mais sentido algum. Você me aproximou de Deus, fez eu me tornar uma pessoa melhor e me mostrou que o amor, vai além de coisas materiais, além de luxúria e coisas que são banais, você me provou que o amor é sincero, carinhoso, cuidadoso e muito cooperativo e compreensivo. Eu te agradeço muito por tudo que ja fez por mim e prometo que um dia vou te recompensar por tudo`
+      `Meu amor, lembro perfeitamente de quando nos conhecemos, e a coragem que me faltava pra te mandar mensagem kkkkk, queria eu ter te enviado aquela mensagem antes para conversar com você. Eu não sabia o que estava perdendo. \n Lembro tambem quando comecei a gostar de você, foi um sentimento muito diferente pra mim, você foi a primeira pessoa que eu senti que realmente se importava comigo, e eu não tava errado, tudo que ja fez por mim não tem preço e é algo que eu vou valorizar pro resto da minha vida, quero casar e ter uma família com você, afinal, a vida sem você já não tem mais sentido algum. \n Você me aproximou de Deus, fez eu me tornar uma pessoa melhor e me mostrou que o amor, vai além de coisas materiais, além de luxúria e coisas que são banais, você me provou que o amor é sincero, carinhoso, cuidadoso e muito cooperativo e compreensivo. Eu te agradeço muito por tudo que ja fez por mim e prometo que um dia vou te recompensar por tudo.\n Só tenho a te agradecer por todos os momentos que tive ao seu lado até agora, e pra ser sincero, foram momento que eu nunca imaginei que teria na vida. \n Obrigado por me proporcionar tudo isso e por tudo o que há em você, seu jeitinho, sua aparência, seu sorriso, tudo o que há em você é perfeito e faz eu a cada dia querer mais passar a vida ao seu lado, Eu te amo minha Esposa, minha Emmy, minha noiva, minha Princesa, Minha coelhinha nenèm. \n Eu te amo pra todo o sempre.`
     ],
-    despedida: "Com todo o meu carinho,",
+    despedida: "Com todo o meu amor por você,",
     fechar: "Guardar a cartinha",
     fecharRotulo: "Fechar carta"
   },
 
   // SEÇÃO DOS PERSONAGENS
   cantinho: {
-    etiqueta: "02 / BOA COMPANHIA",
-    titulo: "Dois guardiões do seu sorriso.",
-    descricao: "Um pouquinho de travessura. Um montão de carinho.",
+    etiqueta: "Nós",
+    titulo: "Dois personagens que a gente ama muuuuito",
+    descricao: "",
     kuromiNome: "Kuromi",
     gengarNome: "Gengar",
     kuromiPapel: "fofa, mas com atitude",
-    gengarPapel: "sombra com boas intenções",
+    gengarPapel: "Fofinha, igual a você",
     kuromiChamada: "A Kuromi tem um recadinho…",
     gengarChamada: "O Gengar tá de olho em você…",
     kuromiAcao: "Pedir um recadinho à Kuromi",
@@ -120,23 +121,23 @@ export const textos = {
 
   // RECADOS DA KUROMI — um recado entre aspas em cada linha
   frasesKuromi: [
-    "Ser fofa e ter atitude? Você consegue os dois. ♡",
-    "Um coraçãozinho rosa só para você!",
-    "Seu jeito de criar deixa o mundo mais bonito."
+    "Você é tão perfeita quanto eu,sabia? ♡",
+    "Eu sei que você ama, mas não pode cometer canibalismo, viu?",
+    "O seu namorado te ama muito e faria de tudo por você"
   ],
 
   // RECADOS DO GENGAR — um recado entre aspas em cada linha
   frasesGengar: [
     "Boo! Era só uma desculpa para te fazer sorrir.",
-    "Prometo assombrar só os seus dias chatos.",
-    "Modo travessura: ligado. Modo carinho: também."
+    "Para que eu to tendo siricuticos",
+    "Seu namorado falou que se você ta lendo isso ele vai te encher de carinho"
   ],
 
   // TÍTULO DA SEÇÃO ABRA QUANDO
   cartinhas: {
-    etiqueta: "03 / CARINHO DE BOLSO",
+    etiqueta: "Mini Cartinhas",
     titulo: "Abra quando…",
-    descricao: "Pequenos lembretes para diferentes pedacinhos do dia.",
+    descricao: "Pequenos lembretes para quando precisar",
     abrir: "Abrir",
     fechar: "Guardar",
     prefixo: "Abra quando"
@@ -147,34 +148,34 @@ export const textos = {
     {
       rotulo: "o dia pesar",
       icone: "lua",
-      mensagem: "Você não precisa resolver tudo hoje. Respira um pouquinho, descansa e lembra: você merece cuidado também. ♡"
+      mensagem: "Você não precisa resolver tudo hoje. tenta mimir um pouquinho, você é uma garota extremamente esforçada e merece descansar bastante, eu te amo! ♡"
     },
     {
       rotulo: "bater a saudade",
       icone: "coracao",
-      mensagem: "Este cantinho é um abraço em forma de pixels. Fica mais um pouquinho; tem carinho guardado aqui para você."
+      mensagem: "Meu amor, você sabia que eu oro todos os dias para que Deus te proteja? Saiba que, sempre e a todo momento, a minha alma vai estar ao seu lado, abraçadinha em você"
     },
     {
-      rotulo: "faltar inspiração",
+      rotulo: "Faltar vontade",
       icone: "estrela",
-      mensagem: "Uma linha, uma cor, um primeiro pontinho. Não precisa sair perfeito para ser bonito. Que tal começar pelo que dá vontade?"
+      mensagem: "SE CONSEGUIR FAZER GANHA MUITOS BEIJINHUS E ABRACINHU :3, E SE NÃO CONSEGUIR< VAI GANHAR VARIOS BEIJINHOS ATÉ VOCÊ CONSEGUIR HEHEHEHHE"
     }
   ],
 
   // TÍTULO DA SEÇÃO DE BRINCADEIRAS
   brincar: {
-    etiqueta: "04 / MAIS UM POUQUINHO AQUI",
-    titulo: "Feito para o seu lado criativo.",
-    descricao: "Sem pressa, sem regras difíceis. Só você e a próxima ideia."
+    etiqueta: "Espacinho pra você brincar",
+    titulo: "Feito exclusivamente pra minha neném.",
+    descricao: "Espaço pras suas Pixel Arts e um Joguinho da memória"
   },
 
   // ATELIÊ — botões, instruções e cores da paleta
   atelie: {
     titulo: `Ateliê da ${nomeDela}`,
     subtitulo: "Um pixel de cada vez.",
-    tamanho: "16 × 16 pixels",
+    tamanho: "32 × 32 pixels",
     instrucao: "Escolha uma cor e desenhe. No teclado, use as setas e pressione Espaço para pintar.",
-    grade: "Tela de pixel art com 16 linhas e 16 colunas",
+    grade: "Tela de pixel art com 32 linhas e 32 colunas",
     borracha: "Borracha",
     limpar: "Limpar",
     baixar: "Baixar PNG",
@@ -219,14 +220,25 @@ export const textos = {
       {
         nome: "Branco",
         valor: "#ffffff"
+      },
+      {
+        nome: "Verde Claro",
+        valor: "#43863b"
+      },
+      {
+        nome: "Verde Escuro",
+        valor: "#003603"
       }
+    
+
+
     ]
   },
 
   // JOGO DA MEMÓRIA — botões e mensagens
   memoria: {
-    titulo: "Pares de outro mundo",
-    subtitulo: "Uma memória cheia de pequenas fofuras.",
+    titulo: "Espero que se Divirta <3",
+    subtitulo: "Eu demorei pra completar pq eu tenho TDAH",
     jogadas: "jogadas",
     pares: "pares",
     reiniciar: "Jogar de novo",
@@ -252,7 +264,7 @@ export const textos = {
   galeria: {
     etiqueta: "PEDACINHOS DA NOSSA HISTÓRIA",
     titulo: "Nós, em pequenos instantes.",
-    descricao: "Um lugar para guardar os momentos que dão vontade de viver de novo.",
+    descricao: "Um lugar para guardar os nossos momentos que mais gostamos",
     vazioTitulo: "As nossas memórias vão morar aqui.",
     vazioTexto: "Cada espaço está esperando um pedacinho da nossa história.",
     placeholder: "Coloque sua foto aqui",
@@ -270,7 +282,7 @@ export const textos = {
   // MENSAGEM FINAL E RODAPÉ
   rodape: {
     frase: "Entre tantos universos, que bom ter você no meu.",
-    feito: "Feito com carinho por",
+    feito: "Feito com amor e Aura por José",
     topo: "Voltar ao início"
   },
 
