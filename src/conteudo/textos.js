@@ -172,9 +172,9 @@ export const textos = {
   atelie: {
     titulo: `Ateliê da ${nomeDela}`,
     subtitulo: "Um pixel de cada vez.",
-    tamanho: "32 × 32 pixels",
+    tamanho: "16 × 16 pixels",
     instrucao: "Escolha uma cor e desenhe. No teclado, use as setas e pressione Espaço para pintar.",
-    grade: "Tela de pixel art com 32 linhas e 32 colunas",
+    grade: "Tela de pixel art com 16 linhas e 16 colunas",
     borracha: "Borracha",
     limpar: "Limpar",
     baixar: "Baixar PNG",
